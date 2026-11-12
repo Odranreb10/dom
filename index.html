@@ -11,12 +11,33 @@
         body{
             background-color:#e8eef3
         }
-        .menu{
-            background-color: #313131;
-            color:white;
-            width: 100%;
-            top: 0;
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
         }
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 14px;
+            padding-bottom: 15px;
+        }
+        nav {
+            background-color: #333;
+            padding: 12px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 14px;
+        }
+        nav a:hover {
+            color: #77aaff;
+        }      
         .main{
             background-color: #ffffff;
             border-radius: 10px;
@@ -67,14 +88,29 @@
         th {
             background-color: #f4f4f4;
         }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 14px;
+        }
     </style>
+    <script src="JavaScript/script.js" defer></script>
 </head>
 <body>
     <center>
-    <div class="menu">
-    <h1>Fundação de Ensino de Contagem</h1>
-    <p>- Curso de Frontend -</p>
-    </div>
+    <header>
+        <h1>Fundação de Ensino de Contagem</h1>
+        <p>Curso de Frontend</p>
+
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
     <div class="main">
         <h2>Manipulação do DOM</h2>
         <p>Este é um parágrafo que será utilizado nos exercícios.</p>
@@ -94,8 +130,8 @@
             <p>Conteúdo da 3ª caixa</p>
         </div>
         <br>
-        <input type="button" value="Botão principal" class="botao"/>
-        <input type="button" value="Botão secundário" class="botao"/>
+        <input type="button" value="Botão principal" class="botao" id="botaoPrincipal"/>
+        <input type="button" value="Botão secundário" class="botao" id="botaoSecundario"/>
     </div>
     <br><br>
     <div class="main">
@@ -158,11 +194,14 @@
                 <tr>
                     <td>Maria</td>
                     <td>19</td>
-                    <td>JavaScript</td>
+                    <td>JavaScript</td>                   
                 </tr>
             </tbody>
         </table>
     </div>
+    <footer>
+        <p>Curso de Frontend - Manipulação do DOM</p>
+    </footer>
     </center>
 </body>
 </html>
